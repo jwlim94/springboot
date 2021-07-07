@@ -24,9 +24,11 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter-web' // spring-boot
+    testImplementation 'org.springframework.boot:spring-boot-starter-test' // spring-boot
     implementation 'junit:junit:4.12'
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
+    compileOnly 'org.projectlombok:lombok' // lombok
+    annotationProcessor 'org.projectlombok:lombok' // lombok
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa' // spring-data-jpa
+    implementation 'com.h2database:h2' // database to test jpo
 }
