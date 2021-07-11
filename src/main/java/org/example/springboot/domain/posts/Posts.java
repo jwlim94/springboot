@@ -3,6 +3,7 @@ package org.example.springboot.domain.posts;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.example.springboot.domain.BaseTimeEntity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,7 +14,7 @@ import javax.persistence.Id;
 @Getter
 @NoArgsConstructor // 아무 param 없는 default constructor
 @Entity // 테이블과 링크될 클래스임을 명시
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
   @Id // PK
   @GeneratedValue(strategy = GenerationType.IDENTITY) // PK의 생성 규칙 -> auto_increment
