@@ -29,7 +29,7 @@ public class PostsApiController {
   }
 
   @GetMapping("/api/v1/posts/{id}") //조회
-  public PostsResponseDto findById(@PathVariable Long id)  {
-    return postsService.findById(id);
+    public PostsResponseDto findById(@PathVariable Long id)  {
+      return postsService.findById(id);
   }
 }
