@@ -45,4 +45,11 @@ public class PostsService {
       .map(PostsListResponseDto::new)
       .collect(Collectors.toList());
   }
+
+  @Transactional
+  public void delete(Long id) {
+    Posts post = postsRepository.findById(id)
+      .orElseThrow(() -> new IllegalArgumentException("post does not exist. id=" + id));
+    postsRepository.delete(post);
+  }
 }
