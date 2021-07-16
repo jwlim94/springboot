@@ -32,4 +32,5 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa' // spring-data-jpa
     implementation 'com.h2database:h2' // database to test jpo
     implementation 'org.springframework.boot:spring-boot-starter-mustache' // mustache template engine
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client' // 스프링 시큐리티 의존성
 }
