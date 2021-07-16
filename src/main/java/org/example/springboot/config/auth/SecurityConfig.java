@@ -22,8 +22,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
   @Override
   protected void configure(HttpSecurity http) throws Exception {
     http
-        .csrf().ignoringAntMatchers("/h2-console/**") //to use h2-console
-      .and()
+        .csrf().disable() //to use h2-console
         .headers().frameOptions().disable() // to use h2-console
       .and()
         .authorizeRequests()
