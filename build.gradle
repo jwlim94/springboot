@@ -33,4 +33,5 @@ dependencies {
     implementation 'com.h2database:h2' // database to test jpo
     implementation 'org.springframework.boot:spring-boot-starter-mustache' // mustache template engine
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client' // 스프링 시큐리티 의존성
+    implementation 'org.springframework.session:spring-session-jdbc' // 데이터베이스를 세션 저장소로 사용
 }
