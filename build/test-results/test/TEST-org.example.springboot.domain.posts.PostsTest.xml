@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.springboot.domain.posts.PostsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-18T22:37:32" hostname="DESKTOP-IBS5766" time="0.0">
+  <properties/>
+  <testcase name="builderTest" classname="org.example.springboot.domain.posts.PostsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
